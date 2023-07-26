@@ -90,6 +90,7 @@ export const RegisterForm = () => {
             <Input
               type="password"
               {...register('password', { required: true })}
+              autoComplete="on"
               id={inputPassword}
             />
           </InputGroup>

@@ -36,7 +36,6 @@ export const LoginForm = () => {
               password: data.password,
             })
           );
-          console.log(data);
           reset();
         })}
       >
@@ -60,6 +59,7 @@ export const LoginForm = () => {
             <Input
               type="password"
               {...register('password', { required: true })}
+              autoComplete="on"
               id={inputPassword}
             />
           </InputGroup>
